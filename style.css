@@ -1,0 +1,459 @@
+body {
+    font-family: 'Oswald', sans-serif; /* Mengatur font untuk seluruh halaman */
+    background-color: #F4FFF4F4;
+    ;
+}
+
+.warp{
+    height: auto;
+    width: 100%;
+}
+
+
+.atas,
+.atas * {
+  box-sizing: border-box;
+}
+.atas {
+  background: linear-gradient(
+    180deg,
+    rgba(46, 70, 0, 1) 0%,
+    rgba(113, 172, 0, 1) 100%
+  );
+  height: 550px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none; /* Menghilangkan border merah */
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px; /* Menambahkan padding untuk ruang */
+    border: none; /* Menghilangkan border hijau */
+    height: 15%;
+}
+
+.logo{
+    float: left;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    width: 50px;
+    flex: 1;
+    border: none; /* Menghilangkan border biru */
+    height: 100%;
+    width: 15%;
+}
+
+.navbar{
+    display: flex; /* Mengubah menjadi flexbox */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    border: none; /* Menghilangkan border oranye */
+    height: 100%;
+    width: 43%;
+}
+
+.login{
+    float: left;
+    flex: 1;
+    text-align: right;
+    border: none; /* Menghilangkan border ungu */
+    height: 100%;
+    width: 20%;
+}
+
+.tengah{
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 80px;
+    border: none;
+}
+
+.latihan{
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+
+.latihan {
+    text-align: center; /* Memusatkan teks */
+    margin-bottom: 100px;
+}
+
+.program {
+    display: flex; /* Mengatur layout menjadi flex */
+    justify-content: space-around; /* Memberikan jarak antar card */
+    margin-top: 20px; /* Jarak atas */
+}
+
+.card {
+    background-color: white; /* Warna latar belakang putih */
+    border-radius: 8px; /* Sudut membulat */
+    padding: 20px; /* Ruang dalam */
+    width: 300%; /* Lebar card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 10px; /* Menambahkan jarak antar card */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Menambahkan transisi */
+}
+
+.card:hover {
+    background-color: rgba(0, 128, 0, 0.8); /* Warna hijau saat hover */
+    color: white; /* Mengubah warna font menjadi putih */
+}
+
+.card img {
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran sempurna */
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar card */
+    height: 100px; /* Menetapkan tinggi tetap untuk gambar */
+    width: 100px; /* Menetapkan lebar tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+}
+
+.card h3 {
+    margin: 10px 0; /* Jarak atas dan bawah judul */
+}
+
+.card p {
+    font-size: 14px; /* Ukuran font deskripsi */
+}
+
+/* Mengatur tampilan ul untuk menjadi horizontal dan menghilangkan bullet */
+.navbar ul {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghilangkan padding */
+    margin: 0; /* Menghilangkan margin */
+    display: flex; /* Mengatur daftar menjadi horizontal */
+    justify-content: center; /* Memusatkan ul di dalam navbar */
+}
+
+.navbar ul li {
+    margin-right: 20px; /* Jarak antar item */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: white; /* Mengatur warna teks */
+}
+
+.login ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.login li {
+    margin-left: 15px;
+}
+
+.tombol-masuk {
+    background-color: white; /* Warna latar belakang tombol */
+    color: #000000; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    text-align: center; /* Memusatkan teks */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+}
+
+.tombol-daftar{
+    color: white; /* Warna teks saat hover */
+}
+
+a {
+    text-decoration: none; /* Menghilangkan garis bawah pada semua link */
+}
+
+.promo {
+    width: 50%;
+    height: 100%;
+    border: none; /* Menghilangkan border kuning */
+}
+
+.promo h2 {
+    font-size: 50px; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+    color: white;
+
+}
+
+.promo p {
+    font-size: 22px; /* Ukuran font untuk deskripsi */
+    margin-bottom: 15px; /* Jarak bawah deskripsi */
+}
+
+.promo .mulai-pelatihan {
+    background-color: white; /* Warna latar belakang tombol */
+    color: #4CAF50; /* Warna teks tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat tombol */
+    text-decoration: none; /* Tanpa garis bawah */
+    font-weight: bold; /* Teks tebal */
+}
+
+.promo .mulai-pelatihan:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+
+.gambar-kiri {
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-kiri img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+
+.pelatih{
+    
+    width: 100%;
+    height: 580px;
+    border: none;
+}
+
+.pelatih-atas{
+   border: none;
+    height: 30%;
+    text-align: center; /* Memusatkan teks */
+}
+
+.pelatih-bawah{
+    height: 70%;
+    display: flex; 
+    justify-content: space-between;
+    gap:2px;
+}
+
+.pelatih-card{
+    width: 27%;
+    height: 70%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+.sub-card-atas {
+    height: 80%;
+    
+    width: 100%;
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk animasi yang halus */
+    border-radius: 10px 10px 0 0; /* Membuat sudut atas membulat */
+}
+
+.sub-card-atas:hover {
+    background-color:#45a0496d; /* Warna hijau semi-transparan saat hover */
+}
+
+.sub-card-bawah {
+    height: 20%;
+    
+    width: 100%;
+    background-color: #45a0496d;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Membuat sudut bawah membulat */
+}
+
+.atas-info {
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+    padding: 20px;
+}
+
+.promo {
+    width: 50%;
+    height: 100%;
+    border: none;
+    padding: 20px;
+}
+
+.gambar-kiri {
+    width: 50%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-kiri img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.regis {
+    width: 60%;
+    height: auto;
+    border: none;
+    padding: 20px;
+    display: flex; /* Menambahkan flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    margin: 0 auto;
+    background-color: rgba(46, 70, 0, 0.8); /* Warna latar belakang sesuai dengan gradien atas */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+.regis h2 {
+    font-size: 50px; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+    color: white;
+
+}
+
+
+.regis form {
+    display: flex; /* Mengatur form menjadi flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    gap: 10px; /* Jarak antar elemen */
+    width: 73%; /* Lebar form */
+    color: white;
+}
+
+.regis button {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.regis button:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+}
+
+hr {
+    border: none;
+    height: 0.2px;
+    background-color: #3A5A00;
+    margin: 20px 0;
+}
+
+.kembali {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.tombol-kembali {
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tombol-kembali:hover {
+    background-color: #45a049;
+    color: white;
+    border-color: #45a049;
+}
+
+
+/* Mengatur posisi form di tengah halaman */
+.atas-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+/* Menyesuaikan ukuran form registrasi */
+
+
+.alasan {
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(27, 66, 0);
+    color: white;
+}
+
+.alasan h1 {
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.alasan-list {
+    width: 45%;
+}
+
+.alasan-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.check-icon {
+    background-color: white;
+    color: rgb(27, 66, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.alasan-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.alasan-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.alasan-image {
+    width: 45%;
+}
+
+.alasan-image img {
+    width: 100%;
+    border-radius: 10px;
+}

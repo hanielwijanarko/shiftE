@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(46, 70, 0, 1) 0%, rgba(113, 172, 0, 1) 100%);
+    font-family: Arial, sans-serif;
+}
+
+.registration-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.registration-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background: rgba(113, 172, 0, 1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: rgba(46, 70, 0, 1);
+}
+
+#error-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgba(113, 172, 0, 1);
+}
+
+.header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    text-align: center;
+    margin: 0;
+    color: #333;
+}
+
+.back-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(113, 172, 0, 1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.back-btn:hover {
+    color: rgba(46, 70, 0, 1);
+}
