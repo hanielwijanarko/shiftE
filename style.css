@@ -587,3 +587,54 @@ hr {
 .kontak-form button:hover {
     background-color: #45a049;
 }
+
+.kontak-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum untuk form */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.kontak-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.kontak-form button:hover {
+    background-color: #45a049;
+}
+
+.hubungi {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan secara horizontal */
+    margin: 40px 0; /* Jarak atas dan bawah */
+}
+
+.hubungi h1 {
+    font-size: 36px; /* Ukuran font untuk judul */
+    color: #2E4600; /* Warna judul */
+}
+
+.hubungi p {
+    text-align: center; /* Memusatkan teks deskripsi */
+    margin-bottom: 20px; /* Jarak bawah deskripsi */
+}
