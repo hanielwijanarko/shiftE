@@ -70,7 +70,6 @@ body {
     height: auto;
     box-sizing: border-box;
     margin: 0 80px;
-    border: none;
 }
 
 .latihan{
@@ -456,4 +455,135 @@ hr {
 .alasan-image img {
     width: 100%;
     border-radius: 10px;
+}
+
+.testimoni {
+    padding: 50px 80px;
+    background-color: #F4FFF4F4;
+}
+
+.testimoni h1 {
+    font-size: 48px;
+    color: #2E4600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimoni-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.testimoni-item {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 20px;
+}
+
+.testimoni-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.testimoni-content img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimoni-text {
+    flex: 1;
+}
+
+.testimoni-text h3 {
+    font-size: 24px;
+    color: #2E4600;
+    margin-bottom: 5px;
+}
+
+.testimoni-text h4 {
+    font-size: 18px;
+    color: #71AC00;
+    margin-bottom: 20px;
+}
+
+.testimoni-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.kontak {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.kontak h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.kontak-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontak-info, .kontak-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.kontak-info h3, .kontak-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.kontak-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.kontak-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontak-form input, 
+.kontak-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.kontak-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.kontak-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.kontak-form button:hover {
+    background-color: #45a049;
 }

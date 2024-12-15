@@ -1,3 +1,26 @@
+<?php
+require_once 'koneksi.php';
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST['name']; // Menggunakan 'name' dari form HTML
+    $password = $_POST['password'];
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $nama_program = $_POST['tipe_training']; // Menggunakan 'tipe_training' dari form HTML
+
+    $sql = "INSERT INTO peserta (nama, password, nama_program) VALUES ('$nama', '$hashed_password', '$nama_program')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Data berhasil disimpan.";
+        // Redirect ke halaman login atau halaman lain jika diperlukan
+        header("Location: index.html");
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -57,21 +80,8 @@
             }
 
             document.getElementById('error-message').innerText = '';
-            alert('Form berhasil dikirim!');
+            this.submit(); // Mengirim form jika semua validasi berhasil
         });
     </script>
-    <!-- 
-    mungkin gini, tapi gak tau juga.
-       
-    Di file daftar.php:
-       - Validasi input dari form
-       - Pastikan password dan konfirmasi password cocok
-       - Query untuk insert data:
-         INSERT INTO users (nama, password, jenis_pelatihan) 
-         VALUES (:nama, :password, :jenis_pelatihan)
-       
-    Setelah berhasil insert:
-       - Redirect ke halaman login
-    -->
 </body>
 </html> 
