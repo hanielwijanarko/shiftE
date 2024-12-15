@@ -22,14 +22,15 @@ $result = $stmt->get_result();
             <th>Nama_Program</th>
         </tr>
 
-        <?php while ($row = $result->fetch_assoc()) { ?>
+            <?php while ($row = $result->fetch_assoc()) { ?>
             <tr>
                 <td><?php echo $row['id_peserta']; ?></td>
                 <td><?php echo $row['nama']; ?></td>
-                <td><?php echo '***' . substr($row['password'], -4); ?></td>  <td><?php echo $row['nama_program']; ?></td>
+                <td><?php echo '***' . substr($row['password'], -4); ?></td>  
+                <td><?php echo $row['nama_program']; ?></td>
                 <td>
-                    <a href="update_form.php?id=<?php echo $row['id_peserta']; ?>">Edit</a> |
-                    <a href="delete_form.php?id=<?php echo $row['id_peserta']; ?>">Delete</a>
+                    <a href="update_form.php?id_peserta=<?php echo $row['id_peserta']; ?>">Edit</a> |
+                    <a href="delete_form.php?id_peserta=<?php echo $row['id_peserta']; ?>">Delete</a>
                 </td>
             </tr>
         <?php } ?>
